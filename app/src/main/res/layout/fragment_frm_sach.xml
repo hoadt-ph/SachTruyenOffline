@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FrmSach">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingLeft="15dp"
+        android:textColor="@color/RedColor"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Sách tổng hợp"
+        android:layout_marginVertical="16dp"
+        android:id="@+id/tvSachTH"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/WhiteColor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/rySach"
+        app:layout_constraintTop_toBottomOf="@+id/tvSachTH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingLeft="15dp"
+        android:textColor="@color/RedColor"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Sách khoa học "
+        android:layout_marginVertical="16dp"
+        android:id="@+id/tvSachKhoahoc"
+        app:layout_constraintTop_toBottomOf="@+id/rySach"
+        android:background="@color/WhiteColor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/rySachKhoahoc"
+        app:layout_constraintTop_toBottomOf="@+id/tvSachKhoahoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:paddingLeft="15dp"
+        android:textColor="@color/RedColor"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Sách kinh doanh "
+        android:layout_marginVertical="16dp"
+        android:id="@+id/tvSachKinhDoanh"
+        app:layout_constraintTop_toBottomOf="@+id/rySachKhoahoc"
+        android:background="@color/WhiteColor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/rySachKinhdoanh"
+        app:layout_constraintTop_toBottomOf="@+id/tvSachKinhDoanh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingLeft="15dp"
+        android:textColor="@color/RedColor"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Sách tình yêu "
+        android:layout_marginVertical="16dp"
+        android:id="@+id/tvSachTinhyeu"
+        app:layout_constraintTop_toBottomOf="@+id/rySachKinhdoanh"
+        android:background="@color/WhiteColor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/rySachTinhYeu"
+        app:layout_constraintTop_toBottomOf="@+id/tvSachTinhyeu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingLeft="15dp"
+        android:textColor="@color/RedColor"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:text="Sách hồi ký "
+        android:layout_marginVertical="16dp"
+        android:id="@+id/tvSachHoiKy"
+        app:layout_constraintTop_toBottomOf="@+id/rySachTinhYeu"
+        android:background="@color/WhiteColor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:orientation="horizontal"
+        android:id="@+id/rySachHoiKy"
+        app:layout_constraintTop_toBottomOf="@+id/tvSachHoiKy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+</FrameLayout>
